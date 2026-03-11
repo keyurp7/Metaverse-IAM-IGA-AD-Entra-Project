@@ -93,39 +93,6 @@ A full governed access flow was validated for a test identity:
 5. AD group membership updated after provisioning
 
 
-This shows controlled access request, workflow-driven provisioning, and final entitlement assignment in the target system.
-
-# Lifecycle Events
-![Figure 8](assets/screenshots/08-lifecycle-events.png)
-
-# JML Workflow Logic
-![Figure 9](assets/screenshots/09-jml-workflow-logic.png)
-
-# Business Role Model
-![Figure 10](assets/screenshots/10-business-role-model.png)
-
-# Workgroups and Ownership
-![Figure 11](assets/screenshots/11-workgroups-and-owners.png)
-
-# Access Request to Provisioning Validation
-![Figure 12](assets/screenshots/12-access-request-initiation.png)
-![Figure 13](assets/screenshots/13-role-selection-submission.png)
-![Figure 14](assets/screenshots/14-request-completion.png)
-![Figure 15](assets/screenshots/15-provisioning-engine-result.png)
-![Figure 16](assets/screenshots/16-ad-membership-validation.png)
-
-# Entra Visibility
-![Figure 17](assets/screenshots/17-entra-users-sync-view.png)
-![Figure 18](assets/screenshots/18-entra-groups-sync-view.png)
-![Figure 19](assets/screenshots/19-entra-connect-health.png)
-
-# Troubleshooting Evidence
-![Figure 20](assets/screenshots/20-troubleshooting-collage.png)
-![Figure 21](assets/screenshots/21-ldap-certificate-collage.png)
-
-# Final Operational State
-![Figure 22](assets/screenshots/22-final-outcomes-collage.png)
-
 # Documentation
 
 - [Architecture](docs/architecture.md)
