@@ -81,10 +81,20 @@ Figure 9A: Shows BP_JML_Mover workflow structure.
 
 Figure 9B: BP_JML_Leaver  workflow logic used to evaluate identity attributes and assign governed access
 
+## Figure 9C: Workflow execution with birthright roles assignment
+
+<img width="1640" height="215" alt="Screenshot 2026-03-04 170404" src="https://github.com/user-attachments/assets/4b451e41-5663-4846-a635-e39da942e665" />
+
+
+ Joiner workflow trigerring successfully and creating identity in IIQ whilst adding birthright entitlements upon attributes such as employeeID and department triggered.
+
 ## Figure 10
 **Business role and entitlement structure used for governed access assignment**  
 
 <img width="940" height="536" alt="image" src="https://github.com/user-attachments/assets/5ce97c8a-ea5f-41e3-8216-4bace1b919c0" />
+
+<img width="1884" height="289" alt="Screenshot 2026-03-04 181131" src="https://github.com/user-attachments/assets/3efcaa23-fe3f-4346-ab05-b8421888f307" />
+
 
 Shows the role-based access model.
 
@@ -125,7 +135,7 @@ Figure 5: Server runtime and service validation across the IAM platform
 
 ## Figure 22-25
 
-**Final governed state and operational validation across the IAM flow**  
+* Final Access request provisioning governed state and operational validation across the IAM flow succesfully along with JML joiner workflow succession*
 
 <img width="940" height="401" alt="image" src="https://github.com/user-attachments/assets/5a9ae6bd-fdf2-41b8-9052-14bc84a168be" />
 
