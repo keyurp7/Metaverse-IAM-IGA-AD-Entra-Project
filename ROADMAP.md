@@ -10,9 +10,13 @@ This roadmap outlines planned enhancements for the Metaverse IAM Lab. Items are 
 
 - [x] Active Directory as identity source of truth
 - [x] SailPoint IdentityIQ governance platform
+- [x] IT role mining using bottom-up methodology
+- [x] IT and business role creation from mining results and top-down design
+- [x] Birthright role provisioning for automatic day-one access
 - [x] JML lifecycle automation (Joiner, Mover, Leaver)
-- [x] Business roles and birthright access design
 - [x] Workgroup ownership and delegated governance
+- [x] Manager Certification campaigns
+- [x] Entitlement Owner Certification campaigns
 - [x] AD Connect / Entra Connect hybrid identity sync
 - [x] LDAP, LDAPS, certificate, and connector troubleshooting
 - [x] End-to-end access request and provisioning validation
@@ -24,9 +28,8 @@ This roadmap outlines planned enhancements for the Metaverse IAM Lab. Items are 
 
 - [ ] Segregation of Duties (SoD) policy implementation
 - [ ] Entitlement-based and role-based conflict detection
-- [ ] Access certification campaign configuration
-- [ ] Manager and application-owner review workflows
 - [ ] Policy violation reporting and exception handling
+- [ ] Advanced role catalogue management and role lifecycle
 
 ---
 

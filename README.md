@@ -50,8 +50,11 @@ A production-inspired Identity and Access Management environment built to demons
 This lab was built to reflect real enterprise IAM processes, not just product setup. It covers:
 
 - Source-of-truth driven identity governance
+- Role mining and entitlement analysis
+- IT and business role design using bottom-up and top-down methodologies
+- Birthright role provisioning for automatic day-one access
 - Joiner, Mover, and Leaver automation
-- Role-based access control and business role design
+- Manager and entitlement owner certification campaigns
 - Workgroup ownership and access accountability
 - Hybrid identity sync from AD to Entra ID
 - Server runtime validation and connector support
@@ -94,17 +97,27 @@ This lab was built to reflect real enterprise IAM processes, not just product se
 - Entitlement and role visibility
 - Workgroup ownership and governance accountability
 
+### Role Mining & Role Design
+- IT role mining using bottom-up methodology against PROD AD
+- Entitlement cluster analysis across identity groups to identify candidate roles
+- IT roles created from discovered entitlement patterns (bottom-up)
+- Business roles designed from departmental access requirements (top-down)
+- Birthright roles defined for automatic assignment to new joiners based on `department` and `employeeType`
+
 ### JML Automation
 - Joiner, Mover, and Leaver lifecycle events
 - Business process workflow design for JML
 - Attribute-driven access logic using `department` and `employeeType`
-- Birthright and role-based provisioning
+- Birthright role assignment triggered automatically through the Joiner workflow
 
-### Access Governance
+### Access Governance & Certification
 - Business roles aligned to departments
 - Birthright-style access design
 - Delegated governance through workgroups and ownership
 - Controlled access request and provisioning process
+- Manager Certification campaigns for manager-to-direct-report access reviews
+- Entitlement Owner Certification campaigns for entitlement-level access reviews
+- Repeatable certification scheduling for SOX and ISO 27001 compliance readiness
 
 ### Hybrid Identity
 - On-prem AD sync into Entra ID through AD Connect
@@ -157,6 +170,11 @@ A full governed access flow was validated for a test identity:
     <td>SailPoint IdentityIQ</td>
   </tr>
   <tr>
+    <td>Role Mining & Entitlement Analysis</td>
+    <td>IT & Business Role Design</td>
+    <td>Birthright Role Provisioning</td>
+  </tr>
+  <tr>
     <td>Active Directory</td>
     <td>Microsoft Entra ID</td>
     <td>AD Connect / Entra Connect</td>
@@ -167,14 +185,19 @@ A full governed access flow was validated for a test identity:
     <td>Access Provisioning</td>
   </tr>
   <tr>
-    <td>Workflow & Lifecycle Events</td>
+    <td>Certification Campaigns</td>
+    <td>Compliance Readiness (SOX / ISO 27001)</td>
     <td>Hybrid Identity</td>
-    <td>LDAP & LDAPS Troubleshooting</td>
   </tr>
   <tr>
+    <td>Workflow & Lifecycle Events</td>
+    <td>LDAP & LDAPS Troubleshooting</td>
     <td>Certificates & Java Truststore</td>
+  </tr>
+  <tr>
     <td>Tomcat Application Hosting</td>
     <td>Platform Support & Debugging</td>
+    <td>SoD & Access Governance</td>
   </tr>
 </table>
 
@@ -182,7 +205,7 @@ A full governed access flow was validated for a test identity:
 
 ## 🗺 Roadmap
 
-This project is actively evolving. Planned enhancements include SoD policies, certification campaigns, Okta integration, SIEM/PAM integration, and Zero Trust alignment.
+This project is actively evolving. Role mining, IT/business role design, birthright provisioning, and certification campaigns are now live. Planned enhancements include SoD policies, Okta integration, SIEM/PAM integration, and Zero Trust alignment.
 
 👉 **[View the full Roadmap](ROADMAP.md)**
 

@@ -54,6 +54,22 @@ Shows IIQ application settings for AD integration.
 
 Shows primary source mappings for identity attributes.
 
+## Figure 7A
+**Role mining configuration for IT role discovery using bottom-up methodology**
+
+<!-- TODO: Upload screenshot to GitHub and replace this line with the image tag -->
+<!-- Screenshot: IT Role Mining template in SailPoint IIQ — Name: IT Role Mining, Owner: Keyur Purohit, Application: PROD AD, Population: PRODGG_DEPT_Test_Users, Entitlements Excluded: AllContractors, AllEmployees, Confluence_Users, Jira_Users. Minimum Identities per Role: 2, Minimum Entitlements per Role: 2, Maximum Groups to Mine: 1000. -->
+
+Shows the IT role mining template configured against the PROD AD application. The mining scope is filtered to the test user population with common entitlements excluded to focus on meaningful role patterns. Thresholds are set to require at least 2 identities and 2 entitlements per candidate role, with a maximum of 1000 groups to mine.
+
+## Figure 7B
+**Role mining results matrix showing discovered entitlement clusters across identity groups**
+
+<!-- TODO: Upload screenshot to GitHub and replace this line with the image tag -->
+<!-- Screenshot: Role Mining Results tab in SailPoint IIQ — matrix showing 25+ identity groups mapped against entitlements like Finance_AP_Users, Finance_AR_Users, Finance_BudgetApproval, Finance_Payroll_Users, Reporting_Users, ServiceDesk_L1, Sales_CRM_FullAccess, Sales_CRM_ReadOnly, etc. Green dots indicate entitlement membership. -->
+
+Shows the output of the role mining process. Each row represents a discovered identity group, and each column represents an entitlement. Green markers indicate which entitlements are held in common by the identities in each group. This matrix forms the basis for IT and business role design — groups with consistent entitlement patterns become candidate roles.
+
 ## Figure 8
 **Lifecycle event configuration supporting automated JML processing**  
 
@@ -81,29 +97,41 @@ Figure 9A: Shows BP_JML_Mover workflow structure.
 
 Figure 9B: BP_JML_Leaver  workflow logic used to evaluate identity attributes and assign governed access
 
-## Figure 9C: Workflow execution with birthright roles assignment
+## Figure 9C
+**Joiner workflow execution with birthright role assignment**
 
 <img width="1640" height="215" alt="Screenshot 2026-03-04 170404" src="https://github.com/user-attachments/assets/4b451e41-5663-4846-a635-e39da942e665" />
 
-
- Joiner workflow trigerring successfully and creating identity in IIQ whilst adding birthright entitlements upon attributes such as employeeID and department triggered.
+Shows the Joiner workflow triggering successfully and creating a new identity in IIQ. Birthright entitlements are automatically assigned based on identity attributes such as `employeeType` and `department`. This is the practical result of the birthright role design — new identities receive governed, department-aligned access from day one without manual intervention.
 
 ## Figure 10
-**Business role and entitlement structure used for governed access assignment**  
+**IT and business role structure built from role mining results and top-down design**
 
 <img width="940" height="536" alt="image" src="https://github.com/user-attachments/assets/5ce97c8a-ea5f-41e3-8216-4bace1b919c0" />
 
 <img width="1884" height="289" alt="Screenshot 2026-03-04 181131" src="https://github.com/user-attachments/assets/3efcaa23-fe3f-4346-ab05-b8421888f307" />
 
-
-Shows the role-based access model.
+Shows the role-based access model built from a combination of bottom-up role mining (IT roles discovered from entitlement patterns) and top-down business role design (roles aligned to departments and job functions). IT roles bundle technical entitlements, while business roles represent the governed access a person needs for their job. Together, they form the RBAC structure used for birthright assignment and access requests.
 
 ## Figure 11
-**Workgroup and ownership structure supporting access accountability**  
+**Workgroup and ownership structure supporting access accountability**
 
 <img width="940" height="284" alt="image" src="https://github.com/user-attachments/assets/30a792e1-300c-48d8-8ab4-c225fe54925a" />
 
 Shows workgroups supporting delegated governance.
+
+## Figure 11A
+**Certification campaigns for manager and entitlement owner access reviews**
+
+<!-- TODO: Upload screenshot to GitHub and replace this line with the image tag -->
+<!-- Screenshot: Certifications page in SailPoint IIQ — 4 certification campaigns listed: Manager Certification (17/3/26, 2:45 am AEDT) and Entitlement Owner Certification (17/3/26, 2:33 am AEDT) owned by Keyur Purohit, plus two earlier runs from 16/3/26. Status column and Percent Complete shown. -->
+
+Shows the certification campaign dashboard in SailPoint IIQ. Two types of access review campaigns were configured and executed:
+
+- **Manager Certification** — requires managers to review and certify the access held by their direct reports. Ensures that access remains appropriate as people move through the organisation.
+- **Entitlement Owner Certification** — requires entitlement owners to review who holds their entitlements. Catches orphaned or excessive access that managers might not have visibility into.
+
+Multiple campaign runs demonstrate repeatable certification scheduling, which is a core requirement for SOX and ISO 27001 compliance readiness.
 
 
 ## Figure 12-15
