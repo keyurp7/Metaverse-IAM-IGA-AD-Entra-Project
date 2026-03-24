@@ -217,7 +217,7 @@ Track all changes, additions, and releases in the changelog.
 **Keyur Purohit**
 IAM Engineer · Melbourne, Australia
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/keyur-purohit)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat&logo=linkedin)]([https://www.linkedin.com/in/keyur-purohit](https://www.linkedin.com/in/keyurpurohit/))
 [![Portfolio](https://img.shields.io/badge/Portfolio-keyurpurohitIAM-orange?style=flat&logo=google-chrome)](https://keyurp7.github.io/keyurpurohitIAM/)
 [![Email](https://img.shields.io/badge/Email-Keyur__7%40outlook.com-red?style=flat&logo=microsoft-outlook)](mailto:Keyur_7@outlook.com)
 
